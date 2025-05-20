@@ -12,8 +12,8 @@ BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
 TEST_PATH       = os.path.join(BASE_DIR, 'lexicons', 'hi.translit.sampled.test.tsv')
 CHKPT_ATTN      = os.path.join(BASE_DIR, 'model_use_attn.pt')
 CHKPT_NO_ATTN   = os.path.join(BASE_DIR, 'model_without_attn.pt')
-OUT_WITH_ATTN   = 'predictions_with_attention.txt'
-OUT_WITHOUT_ATTN = 'predictions_without_attention.txt'
+OUT_WITH_ATTN   = 'predictions_wtention.txt'
+OUT_WITHOUT_ATTN = 'predictions_withoution.txt'
 
 # ─── Device & tokens ─────────────────────────────────────────
 device  = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
