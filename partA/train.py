@@ -96,7 +96,7 @@ def sweep_run():
             'val_loss':    vl_loss,
             'val_acc':     vl_acc
         })
-            
+
     # save best
     torch.save(model.state_dict(),'model_use_attn.pt')
     wandb.save('model_use_attn.pt')
