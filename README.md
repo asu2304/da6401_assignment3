@@ -1,5 +1,7 @@
 # Transliteration System with Attention Mechanisms
 
+**[View full experiment results on W&B Report](https://wandb.ai/da24s006-indian-institue-of-technology-madras-/assignment-3/reports/Assignment-3-Ashutosh-Patidar-DA24S006---VmlldzoxMjc3NjY1Mg)**
+
 This repository contains an implementation of a Seq2Seq neural machine translation system for transliterating between Roman script and Devanagari script. The system includes both vanilla Seq2Seq and attention-based models.
 
 ## Repository Structure
@@ -129,8 +131,6 @@ This creates `comparison_grid.png`, highlighting where the attention model succe
 - hid_dim: 256
 - lr: 0.00
 
-
-
 ## Results
 
 The attention-based model significantly outperforms the vanilla model:
@@ -145,3 +145,8 @@ Specifically, attention improves transliteration by helping maintain correct map
 
 The visualizations in `attention_heatmaps/` and `heatmap_*.png` illustrate how the attention mechanism learns to focus on the appropriate input characters when generating each output character.
 
+Citations:
+[1] https://wandb.ai/da24s006-indian-institue-of-technology-madras-/assignment-3/reports/Assignment-3-Ashutosh-Patidar-DA24S006---VmlldzoxMjc3NjY1Mg
+
+---
+Answer from Perplexity: pplx.ai/share
