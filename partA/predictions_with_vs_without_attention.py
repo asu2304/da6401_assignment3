@@ -99,7 +99,7 @@ else:
     print("No examples where attention corrected a vanilla error.")
     print(f"Empty CSV written to {OUTPUT_CSV}")
 
-# 11) Starter inferences for your report
+# 11) Starter inferences for the report
 print("\n### Inferences (Part c) ###")
 print("1. Attention corrects many cases where the vanilla model dropped or repeated trailing characters.")
 print("2. Consonant clusters (e.g., 'ksh', 'chh') see marked improvement under attention.")
