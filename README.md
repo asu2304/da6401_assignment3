@@ -129,7 +129,7 @@ This creates `comparison_grid.png`, highlighting where the attention model succe
 - emb_dim: 16
 - enc_layers: 3
 - hid_dim: 256
-- lr: 0.00
+- lr: 0.001
 
 ## Results
 
