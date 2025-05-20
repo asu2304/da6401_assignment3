@@ -30,8 +30,8 @@ Transliteration_System/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/Transliteration_System.git
-   cd Transliteration_System
+   git clone https://github.com/asu2304/da6401_assignment3
+   cd da6401_assignment3
    ```
 
 2. Install required packages:
@@ -43,22 +43,21 @@ Transliteration_System/
 
 ### Training Models
 
-To train the models from scratch:
+To train with wandb sweep:
 
 ```bash
 cd partA
 python train.py
 ```
 
-This will train both the vanilla Seq2Seq model and the attention-based model using the hyperparameters defined in the script. Model checkpoints will be saved to `model_use_attn.pt` and `model_without_attn.pt`.
+Here in this script i have implemented with and without attention mechanism in single code and passed use_attention as a hyperparameter so you can train both the vanilla Seq2Seq model and the attention-based model using the hyperparameters defined in the script. Model checkpoints will be saved accordingly.
 
-### Generating Predictions
+### Generating Predictions and Evaluation on test set
 
-To generate predictions on the test set using the pre-trained models:
-
-```bash
-cd partA
-python generate_predictions_and_test_accuracies.py
+To generate predictions on the test set using the pre-trained models you can run the follwing jupter notebook: 
+```
+partA\prediction_notebook_with_attention.ipynb
+partA\prediction_notebook_without_attention.ipynb
 ```
 
 This will:
@@ -100,19 +99,8 @@ python question4_grid_visualization.py
 
 This creates `comparison_grid.png`, highlighting where the attention model succeeds and the vanilla model fails.
 
-### Evaluation
 
-To compute test set accuracy metrics for both models:
 
-```bash
-cd partA
-python evaluate_preds.py
-```
-
-This will print:
-- Character-level accuracy (% of characters correctly predicted)
-- Word-level accuracy (% of complete words correctly predicted)
-- Performance difference between the two models
 
 ## Model Architecture
 
@@ -122,14 +110,6 @@ This will print:
 
 ## Hyperparameters
 
-### Best Attention Model:
-- Embedding dimension: 256
-- Hidden dimension: 256
-- Encoder layers: 3
-- Decoder layers: 1
-- Cell type: LSTM
-- Dropout: 0.2
-
 ### Best Vanilla Model:
 - Embedding dimension: 32
 - Hidden dimension: 256
@@ -137,6 +117,19 @@ This will print:
 - Decoder layers: 3
 - Cell type: LSTM
 - Dropout: 0.2
+  
+### Best Attention Model:
+- batch_size: 128
+- beam_size: 3
+- cell_type: GRU
+- dec_layers: 1
+- dropout: 0.2
+- emb_dim: 16
+- enc_layers: 3
+- hid_dim: 256
+- lr: 0.00
+
+
 
 ## Results
 
