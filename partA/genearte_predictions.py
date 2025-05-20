@@ -8,9 +8,9 @@ from data_utils import TransliterationDataset, collate_fn, src_vocab, tgt_vocab
 from model import Encoder, Decoder, Seq2Seq
 
 # Paths
-TEST_PATH         = 'C:\Users\Ashutosh Patidar\OneDrive\Documents\GitHub\Transliteration_System\partA\lexicons\hi.translit.sampled.test.tsv'
-MODEL_ATTN_PATH   = '/kaggle/input/da6401_transliteration_trained/pytorch/default/1/model_use_attn.pt'
-MODEL_NO_ATTN_PATH= '/kaggle/input/da6401_transliteration_trained/pytorch/default/1/model_without_attn.pt'
+TEST_PATH         = 'partA/lexicons/hi.translit.sampled.test.tsv'
+MODEL_ATTN_PATH   = 'partA/model_use_attn.pt'
+MODEL_NO_ATTN_PATH= 'partA/model_without_attn.pt'
 
 # Device and pad index
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
