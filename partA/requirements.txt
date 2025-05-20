@@ -1,0 +1,22 @@
+# Core deep‐learning
+torch>=1.8.0
+torchvision>=0.9.0
+torchaudio>=0.8.0
+
+# Data processing
+pandas>=1.1.0
+numpy>=1.19.0
+
+# Experiment tracking
+wandb>=0.12.0
+
+# Plotting & visualization
+matplotlib>=3.3.0
+seaborn>=0.11.0
+
+# Utilities
+tqdm>=4.56.0
+
+# (Optional) for Jupyter/Colab notebooks
+ipython>=7.16.0
+jupyterlab>=2.2.0
